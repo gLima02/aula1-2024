@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de crédito</title>
+</head>
+<body>
+    <form action="/submit_card_data" method="post">
+        <label for="card_number">Número do cartão:</label><br>
+        <input type="text" id="card_number" name="card_number" pattern="[0-9]{16}" title="Por favor, insira um número de cartão válido de 16 dígitos."><br>
+        <label for="card_holder">Nome do titular:</label><br>
+        <input type="text" id="card_holder" name="card_holder" required><br>
+        <label for="expiration_date">Data de validade:</label><br>
+        <input type="month" id="expiration_date" name="expiration_date" required><br>
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" title="Por favor, insira um CVV válido de 3 dígitos."><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+
+</body>
+</html>
